@@ -3,7 +3,7 @@ class student3:public Student{
 		string RandomNum()
 		{
 			srand(time(0));
-			return tp_string(rand()%10001/10000.0);
+			return dou_to_str(rand()%10001/10000.0);
 		}
 		string RandomOp()
 		{
