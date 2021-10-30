@@ -6,5 +6,5 @@ string expression()
 		str.append(student.RandomOp);
 	}
 	str.append(student.RandomNum);
-	return str;
+	cout<<str<<"="<<"?"<<endl
 }
