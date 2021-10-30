@@ -18,5 +18,5 @@ class student1:public student
 			{
 				return str2;
 			}
-		} 
+		}  
 }
