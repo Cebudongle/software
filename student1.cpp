@@ -4,7 +4,7 @@ class student1:public student
 		string RandomNum()
 		{
 			srand(time(0));
-			return to_string(rand()%100);
+			return dou_to_str(rand()%100);
 		}
 		string RandomOp()
 		{
