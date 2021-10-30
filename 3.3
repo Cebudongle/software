@@ -2,13 +2,11 @@ class student3:public student{
 	public:
 		string RandomNum()
 		{
-			srand(time(0));
 			return dou_to_str(rand()%10001/10000.0); //将to_str改为dou_to_str 
 		}
 		string RandomOp()
 		{
 			string str1="+",str2="-",str3="*",str4="/";
-			srand(time(0));
 			if(rand()%4==0)
 			{
 				return str1;
