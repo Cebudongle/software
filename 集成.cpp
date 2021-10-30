@@ -229,11 +229,10 @@ int main()
 	student1 stu1;
 	student2 stu2;
 	student3 stu3;
-	
+	int count=0;
 	for(int i=0;i<nu;i++)
-	{	
+	{	 
 		cout << "输出: "; 		
-//		que1.expression(stu);
 		string s ;
 		if(level==1)s=stu1.expression();
 		if(level==2)s=stu2.expression();
@@ -243,11 +242,16 @@ int main()
 		double temp,ans=que1.getres(s);
 		cin>>temp;
 		if(fabs(temp-ans)<1e-2)cout<<"Accepted";
-		else cout<<"Wrong Answer";
+		else {
+		cout<<"Wrong Answer";
+		count++;
+	    }
 		cout<<"  The answer is "<<fixed<<setprecision(2)<<ans<<endl;
 		
 	}
-
-	
+	if(count!=0)
+	cout<<"真可惜,本次错了"<<count<<"题"<<endl; 
+	else
+	cout<<"恭喜你本次全对!"<<endl;
 	return 0;
 }
